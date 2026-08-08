@@ -1,13 +1,20 @@
 [project]
-name = "python-template"
+name = "research_react_agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "research react agent built in python"
 readme = "README.md"
 authors = [
     { name = "Luis", email = "luishenriquesousay.t.2018@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ddgs>=9.14.4",
+    "langchain-groq>=1.1.3",
+    "langchain[google-genai]>=1.2.7",
+    "requests>=2.32.5",
+    "rich>=14.3.2",
+    "trafilatura>=2.2.0",
+]
 
 [project.scripts]
 python-template = "python_template:main"
@@ -20,3 +27,4 @@ build-backend = "uv_build"
 dev = [
     "ruff>=0.16.0",
 ]
+
