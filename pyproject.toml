@@ -1,11 +1,8 @@
 [project]
 name = "research_react_agent"
 version = "0.1.0"
-description = "research react agent built in python"
+description = "research react agent built in python with langgraph"
 readme = "README.md"
-authors = [
-    { name = "Luis", email = "luishenriquesousay.t.2018@gmail.com" }
-]
 requires-python = ">=3.12"
 dependencies = [
     "ddgs>=9.14.4",
@@ -15,16 +12,3 @@ dependencies = [
     "rich>=14.3.2",
     "trafilatura>=2.2.0",
 ]
-
-[project.scripts]
-python-template = "python_template:main"
-
-[build-system]
-requires = ["uv_build>=0.12.0,<0.13.0"]
-build-backend = "uv_build"
-
-[dependency-groups]
-dev = [
-    "ruff>=0.16.0",
-]
-
